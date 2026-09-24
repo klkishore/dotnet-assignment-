@@ -1,0 +1,140 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //arithmetic operations
+            int a = 10;
+            int b = 20;
+            Console.WriteLine($"addition:{a + b}");
+            Console.WriteLine($"subraction:{a - b}");
+            Console.WriteLine($"multiplication:{a * b}");
+            Console.WriteLine($"division:{a / b}");
+
+            // relational operations
+            int x = 5;
+            int y = 10;
+            Console.WriteLine($"x>y:{x > y}");
+            Console.WriteLine($"x<y:{x < y}");
+            Console.WriteLine($"x==y:{x == y}");
+
+            // logical operations
+            bool p = true;
+            bool q = false;
+            Console.WriteLine($"p&&q:{p && q}");
+            Console.WriteLine($"p||q:{p || q}");
+            Console.WriteLine($"!p:{!p}");
+
+            //assignment operations
+            int c = 20;
+            Console.WriteLine($"c:{c}");
+            c += 10;
+            Console.WriteLine($"c +=5:{c}");
+            Console.WriteLine($"c-=5:{c}");
+
+            // implicit casting
+            int i = 10;
+            double num = i;
+            Console.WriteLine($"implicit casting:{num}");
+            Console.WriteLine($"implicit casting:{i}");
+
+            //explicit casting
+            double num1 = 11.34;
+            int inter = (int)num1;
+            Console.WriteLine($"explicit casting:{inter}");
+
+            // convert methods
+            string name = "163";
+            int result = Convert.ToInt32(name);
+            double result1 = Convert.ToDouble(name);
+            Console.WriteLine($"result:{result}");
+            Console.WriteLine($"result1:{result1}");
+
+            //string to number
+            string number = "56";
+            int no = int.Parse(number);
+            Console.WriteLine($"no:{no + 10}");
+
+            // number to string
+            int num2 = 100;
+            string str = num2.ToString();
+            Console.WriteLine($"str:{str}");
+
+            //conditional statements
+            int age = 28;
+            if (age > 18)
+            {
+                Console.WriteLine("you are eligible to drive");
+            }
+            //if-else
+            int age1 = 22;
+            if (age >= 20)
+            {
+                Console.WriteLine("you are major");
+            }
+            else
+            {
+                Console.WriteLine("you are minor");
+            }
+            // if-else-if
+            int marks = 75;
+            if (marks > 86)
+            {
+                Console.WriteLine("excellent");
+            }
+            else if (marks > 80)
+            {
+                Console.WriteLine("good");
+            }
+            else if (marks > 70)
+            {
+                Console.WriteLine("average");
+            }
+            else
+            {
+                Console.WriteLine("fail");
+            }
+
+            // nested if
+            int num3 = 30;
+            bool idcard = false;
+            if (num3 >= 30)
+            {
+                if (idcard)
+                {
+                    Console.WriteLine("enytry allowed");
+                }
+                else
+                {
+                    Console.WriteLine("denied");
+                }
+            }
+            //for loop
+
+            for (int j = 1; j <= 20; j++)
+            {
+                Console.WriteLine(j);
+            }
+            //print even numbers
+            for (int d = 1; d <= 10; d++)
+            {
+                if (d % 2 == 0)
+                {
+                    Console.WriteLine(d);
+                }
+            }
+
+
+
+
+        }
+    }
+}

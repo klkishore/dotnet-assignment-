@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practice_1
+{
+    class Student
+    {
+        string name;
+        int age;
+        string city;
+        int cgpa;
+
+        public Student()
+        {
+            name = "Rahul";
+            age = 24;
+            city = "villupuram";
+            cgpa = 9;
+        }
+        public void fullThrottle()
+        {
+            Console.WriteLine("The student details is here");
+        }
+        static void Main(string[] args)
+        {
+            Student std = new Student();
+            Console.WriteLine(std.name);
+            Console.WriteLine(std.age);
+            Console.WriteLine(std.city);
+            Console.WriteLine(std.cgpa);
+        }
+    }
+}
